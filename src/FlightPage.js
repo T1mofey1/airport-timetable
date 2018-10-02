@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 import { hostname, appId, secretCode } from './api';
 import airports from './airports.json';
 import Header from './Header';
@@ -53,15 +54,14 @@ export default class FlightPage extends React.Component {
       hasError: false,
     });
 
-    fetch(
+    axios.get(
       `${hostname}${airport}${airportStatus}/${year}/${month}/${day}/${hour}?${appId}&appKey=${secretCode}&utc=false&numHours=4&maxFlights=50`,
     )
-      .then(response => response.json())
-      .then(({ flightStatuses, error }) => {
+      .then(({ data, error }) => {
         if (error) {
           throw error;
         }
-        return flightStatuses
+        return data.flightStatuses
           .map(item => ({
             ...item,
             arrivalAirportName: airports.find(

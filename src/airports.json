@@ -16212,4 +16212,8 @@
 {"id":"9540","name":"Deer Harbor Seaplane","city":"Deer Harbor","country":"United States","iata":"DHB","icao":"\\N","latitude":"48.618397","longitude":"-123.00596","altitude":"0","timezone":"-8","dst":"A","tz":"America/Los_Angeles"}
 ,
 {"id":"9541","name":"San Diego Old Town Transit Center","city":"San Diego","country":"United States","iata":"OLT","icao":"\\N","latitude":"32.7552","longitude":"-117.1995","altitude":"0","timezone":"-8","dst":"A","tz":"America/Los_Angeles"}
+,
+{"id":"9542","name":"Magas Airport","city":"Magas","country":"Russia","iata":"IGT","icao":"\\N","latitude":"32.7552","longitude":"-117.1995","altitude":"0","timezone":"-8","dst":"A","tz":"Russia"}
+,
+{"id":"9542","name":"Sabetta International Airport","city":"Sabetta","country":"Russia","iata":"SBT","icao":"\\N","latitude":"32.7552","longitude":"-117.1995","altitude":"0","timezone":"-8","dst":"A","tz":"Russia"}
 ]
